@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+
+<style>
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left; 
+        border: 2px solid #000;
+        border-radius: 45px;
+        padding: 50px;
+        background-color: #3a151517;
+    }
+    
+    .center {
+        text-align: center;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Registration Page</h1>
+
+<div class="container">
+<center>
+    <form method="post" action="Registrationpage">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <br>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="testing">Testing</option>
+                <option value="sql">SQL</option>
+            </select>
+        </div>
+        <br>
+       <div class="gender-container">
+    <label class="gender">
+        <input type="radio" name="gender" value="male">
+        Male
+    </label>
+    <label class="gender">
+        <input type="radio" name="gender" value="female">
+        Female
+    </label>
+    <label class="gender">
+        <input type="radio" name="gender" value="other">
+        Other
+    </label>
+   
+ </div>
+ <br>
+ 
+ 
+       <div>
+            <label for="pan">Pancard No:</label>
+            <input type="tel" id="pan" name="pan" required>
+        </div>
+        
+        
+  		<br>
+        <br><br>
+        <div class="center">
+            <button type="submit" class="registration">Register</button>
+        </div>
+    </form>
+    
+</div>
+ 
+
+</center>
+<center>
+<br>
+<a href="ViewRecords"><h2>view Records</h2></a>  
+</center>
+</body>
+</html>
